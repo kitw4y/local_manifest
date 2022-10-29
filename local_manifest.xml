@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="6768Team"
-           fetch="https://github.com/6768Team"/>
-
-  <remote  name="Redmi-MT6768"
-           fetch="https://github.com/Redmi-MT6768"
-           revision="twelve"/>
-
-  <remote  name="memetek"
-           fetch="https://github.com/nashc-dev"/>
+ <!-- Remotes -->
+  <remote  name="r9" fetch="https://gitlab.com/R9Lab"/>
+  <remote  name="me" fetch="https://github.com/orkunergun"/>
+  <remote  name="rrr" fetch="https://github.com/6768Team"/>
+  <remote  name="rr" fetch="https://github.com/begonia-dev"/>
+  <remote  name="r" fetch="https://github.com/nashc-dev"/>
+  <remote  name="meme" fetch="https://github.com/kitw4y"/>
+  <remote  name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD"/>
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/lava" name="android_device_xiaomi_lava" remote="6768Team" revision="lineage-19.1-S"/>
-  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="6768Team" revision="lineage-19.1-S"/>
-
- <!-- Kernel -->
-  <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="Redmi-MT6768"/>
-
- <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lava" name="android_vendor_xiaomi_lava" remote="6768Team" revision="lineage-19.1-S"/>
-  <project path="vendor/xiaomi/mt6768-ims" name="android_vendor_xiaomi_mt6768-ims" remote="Redmi-MT6768"/>
+  <project path="device/xiaomi/lava" name="DeviceTree" remote="meme" revision="rice-13"/>
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="rrr" revision="lineage-20"/>
+  <project path="kernel/xiaomi/mt6768" name="LightningPlus" remote="me" revision="12.1"/>
+  <project path="vendor/xiaomi/lava" name="android_vendor_xiaomi_lava" remote="rrr" revision="lineage-20"/>
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="r" revision="next/arrow-13.0"/>
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="rrr" revision="lineage-20.0"/>
   
  <!-- Extras -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="6768Team" revision="lineage-19.1-S"/>
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="memetek" revision="lineage-19.1"/>
+  <remove-project name="platform/packages/modules/Bluetooth"/>
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="rr" revision="13.0"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master"/>
 
- <!-- Additional
-  <remove-project name="LineageOS/android_frameworks_opt_telephony" path="frameworks/opt/telephony"/>
-  <project path="frameworks/opt/telephony" name="PixelPlusUI/frameworks_opt_telephony" remote="github" revision="sv2"/>
-
-  <remove-project name="platform/frameworks/opt/net/ims"  path="frameworks/opt/net/ims"/>
-  <project path="frameworks/opt/net/ims" name="PixelPlusUI/frameworks_opt_net_ims" remote="github" revision="sv2"/> -->
 </manifest>
