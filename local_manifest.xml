@@ -6,7 +6,7 @@
   <project path="device/xiaomi/mt6768-common" name="mt6768-dev/android_device_xiaomi_mt6768-common" remote="github" revision="lineage-20"/>
   <project path="kernel/xiaomi/mt6768" name="mt6768-dev/android_kernel_xiaomi_mt6768" remote="github" revision="lineage-20"/>
   <project path="vendor/xiaomi" name="hentaiOS-MT6768/vendor_xiaomi" remote="github" revision="TwistedScarlett"/>
-  <project path="hardware/mediatek" name="R9Lab/MTKHardware" remote="github" revision="lineage-20"/>
+  <project path="hardware/mediatek" name="nashc-dev/android_hardware_mediatek" remote="github" revision="lineage-20"/>
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/>
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1"/>
   <project path="packages/app/ImsService" name="R9Lab/ImsService" remote="github" revision="lineage-20"/>
