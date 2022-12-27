@@ -30,6 +30,7 @@
   <project path="vendor/xiaomi" name="vendor_xiaomi" remote="me" revision="TwistedScarlett"/>
 
  <!-- Extra -->
+  <remove-project name="vendor/gms"/>
   <project path="vendor/gms" name="vendor_gms" remote="gms" revision="tm"/>
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="me" revision="lineage-20"/>
   <project path="packages/app/ImsService" name="ImsService" remote="me" revision="lineage-20"/>
