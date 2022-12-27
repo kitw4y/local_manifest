@@ -9,6 +9,9 @@
  
   <remote name="mt"
           fetch="https://github.com/mt6768-dev"/>
+  
+  <remote name="gms"
+          fetch="http://git.statixos.com/sourajitk/vendor_gms.git"/>
 
 <!-- Remove some modules -->
   <!--remove-project name="packages_modules_Bluetooth" /-->
@@ -27,6 +30,7 @@
   <project path="vendor/xiaomi" name="vendor_xiaomi" remote="me" revision="TwistedScarlett"/>
 
  <!-- Extra -->
+  <project path="vendor/gms" name="vendor_gms" remote="gms" revision="tm"/>
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="me" revision="lineage-20"/>
   <project path="packages/app/ImsService" name="ImsService" remote="me" revision="lineage-20"/>
   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="me" revision="lineage-20"/>
