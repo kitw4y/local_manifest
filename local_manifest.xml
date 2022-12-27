@@ -15,7 +15,7 @@
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="device-r" remote="me" revision="evoxr"/>
+  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="evox"/>
 
  <!-- Common Trees -->
   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="me" revision="lineage-20"/>
@@ -24,7 +24,8 @@
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="mt" revision="lineage-20"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="me" revision="TwistedScarlett"/>
+  <project path="vendor/xiaomi/lancelot" name="vendor-r" remote="me" revision=" 13-R"/>
+  <project path="vendor/xiaomi/mt6768-common" name="common-vendor" remote="me" revision="13-R"/>
 
  <!-- Extra -->
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="me" revision="lineage-20"/>
