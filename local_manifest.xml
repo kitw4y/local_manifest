@@ -9,13 +9,16 @@
  
   <remote name="mt"
           fetch="https://github.com/mt6768-dev"/>
+  
+  <remote name="lang"
+          fetch="https://github.com/galang8664"/>
 
 <!-- Remove some modules -->
   <!--remove-project name="packages_modules_Bluetooth" /-->
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="evoxnew"/>
+  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="bliss"/>
 
  <!-- Common Trees -->
   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="me" revision="lineage-20"/>
@@ -24,8 +27,8 @@
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="mt" revision="lineage-20"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lancelot" name="vendor-r" remote="me" revision="13-R"/>
-  <project path="vendor/xiaomi/mt6768-common" name="common-vendor" remote="me" revision="13-R"/>
+  <project path="vendor/xiaomi/lancelot" name="vendor_xiaomi_lancelot" remote="lang" revision="lineage-20"/>
+  <project path="vendor/xiaomi/mt6768-common" name="common-vendor" remote="lang" revision="R"/>
 
  <!-- Extra -->
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="me" revision="lineage-20"/>
