@@ -9,6 +9,9 @@
  
   <remote name="mt"
           fetch="https://github.com/mt6768-dev"/>
+  
+  <remote name="lang"
+          fetch="https://github.com/galang8664"/>
 
 <!-- Remove some modules -->
   <!--remove-project name="packages_modules_Bluetooth" /-->
@@ -24,8 +27,8 @@
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="mt" revision="lineage-20"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lancelot" name="vendor-r" remote="me" revision="13-R"/>
-  <project path="vendor/xiaomi/mt6768-common" name="common-vendor" remote="me" revision="13-R"/>
+  <project path="vendor/xiaomi/lancelot" name="vendor_xiaomi_lancelot" remote="lang" revision="new"/>
+  <project path="vendor/xiaomi/mt6768-common" name="common-vendor" remote="lang" revision="new"/>
 
  <!-- Extra -->
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="me" revision="lineage-20"/>
