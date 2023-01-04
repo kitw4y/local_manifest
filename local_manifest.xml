@@ -10,15 +10,15 @@
   <remote name="mt"
           fetch="https://github.com/mt6768-dev"/>
   
-  <remote name="gms"
-          fetch="http://git.statixos.com/sourajitk/vendor_gms.git"/>
+  <remote name="lang"
+          fetch="https://github.com/galang8664"/>
 
 <!-- Remove some modules -->
   <!--remove-project name="packages_modules_Bluetooth" /-->
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="evoxnew"/>
+  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="statix"/>
 
  <!-- Common Trees -->
   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
@@ -35,7 +35,7 @@
   <project path="packages/app/ImsService" name="ImsService" remote="me" revision="lineage-20"/>
   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="me" revision="lineage-20"/>
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master"/>
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="me" revision="lineage-20"/>
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="mt" revision="lineage-20"/>
 
  <!-- Patch -->
   <!--project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="Bt" revision="13.0"/-->
