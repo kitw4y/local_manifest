@@ -1,44 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="ImSurajxD"
-          fetch="https://gitlab.com/ImSurajxD"/>
- 
-  <remote name="me"
-          fetch="https://github.com/kitw4y"/>
- 
-  <remote name="mt"
-          fetch="https://github.com/mt6768-dev"/>
-  
-  <remote name="lang"
-          fetch="https://github.com/galang8664"/>
-
-<!-- Remove some modules -->
-  <!--remove-project name="packages_modules_Bluetooth" /-->
-  <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
-
- <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="evoxnew"/>
-
- <!-- Common Trees -->
-  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
-
- <!-- Kernel -->
-  <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="mt" revision="lineage-20"/>
-
- <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="mt" revision="lineage-20"/>
-  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
-
- <!-- Extra -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt" revision="lineage-20"/>
-  <project path="packages/app/ImsService" name="ImsService" remote="me" revision="lineage-20"/>
-  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="me" revision="lineage-20"/>
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master"/>
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="mt" revision="lineage-20"/>
-
- <!-- Patch -->
-  <!--project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="Bt" revision="13.0"/-->
-  <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
+ <!-- Sources -->
+  <project path="device/xiaomi/lancelot" name="kitw4y/device-new" remote="github" revision="evoxnew"/>
+  <project path="device/xiaomi/mt6768-common" name="mt6768-dev/android_device_xiaomi_mt6768-common" remote="github" revision="lineage-20"/>
+  <project path="kernel/xiaomi/mt6768" name="mt6768-dev/android_kernel_xiaomi_mt6768" remote="github" revision="lineage-20"/>
+  <project path="vendor/xiaomi/lancelot" name="mt6768-dev/proprietary_vendor_xiaomi_lancelot" remote="github" revision="lineage-20"/>
+  <project path="vendor/xiaomi/mt6768-common" name="mt6768-dev/proprietary_vendor_xiaomi_mt6768-common" remote="github" revision="lineage-20"/>
+  <project path="hardware/mediatek" name="mt6768-dev/android_hardware_mediatek" remote="github" revision="lineage-20"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1"/>
+  <project path="packages/app/ImsService" name="kitw4y/ImsService" remote="github" revision="lineage-20"/>
+  <project path="packages/apps/MtkFMRadio" name="mt6768-dev/android_packages_apps_MtkFMRadio" remote="github" revision="lineage-20"/>
+  <project path="device/mediatek/sepolicy_vndr" name="mt6768-dev/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-20"/>
 
 </manifest>
