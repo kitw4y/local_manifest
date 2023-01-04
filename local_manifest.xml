@@ -18,7 +18,7 @@
   <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="statix"/>
+  <project path="device/xiaomi/lancelot" name="device-new" remote="me" revision="evoxnew"/>
 
  <!-- Common Trees -->
   <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
