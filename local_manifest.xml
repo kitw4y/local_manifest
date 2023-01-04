@@ -27,7 +27,7 @@
   <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="mt" revision="lineage-20"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi" name="proprietary_vendor_xiaomi_lancelot" remote="mt" revision="lineage-20"/>
+  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="mt" revision="lineage-20"/>
   <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
 
  <!-- Extra -->
