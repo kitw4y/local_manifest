@@ -2,7 +2,7 @@
 <manifest>
 
  <!-- Sources -->
-  <project path="device/xiaomi/lancelot" name="galang8664/device_xiaomi_lancelot" remote="github" revision="derp-13"/>
+  <project path="device/xiaomi/lancelot" name="kitw4y/device_xiaomi_lancelot" remote="github" revision="derp-13"/>
   <project path="device/xiaomi/mt6768-common" name="SuperiorOS-Devices/device_xiaomi_mt6768-common" remote="github" revision="thirteen"/>
   <project path="kernel/xiaomi/mt6768" name="AthenaPrjk/kernel_xiaomi_mt6768" remote="github" revision="13.0"/>
   <project path="vendor/xiaomi" name="SuperiorOS-Devices/vendor_xiaomi_mt6768-common" remote="github" revision="thirteen"/>
