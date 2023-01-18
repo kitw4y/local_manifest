@@ -2,15 +2,12 @@
 <manifest>
 
  <!-- Sources -->
-  <project path="device/xiaomi/lancelot" name="galang8664/android_device_xiaomi_lancelot" remote="github" revision="derp"/>
-  <project path="device/xiaomi/mt6768-common" name="mt6768-dev/android_device_xiaomi_mt6768-common" remote="github" revision="lineage-20"/>
+  <project path="device/xiaomi/lancelot" name="kitw4y/android_device_xiaomi_lancelot" remote="github" revision="derp"/>
+  <project path="device/xiaomi/mt6768-common" name="kitw4y/device-common" remote="github" revision="thirteen"/>
   <project path="kernel/xiaomi/mt6768" name="mt6768-dev/android_kernel_xiaomi_mt6768" remote="github" revision="lineage-20"/>
-  <project path="vendor/xiaomi/lancelot" name="mt6768-dev/proprietary_vendor_xiaomi_lancelot" remote="github" revision="lineage-20"/>
-  <project path="vendor/xiaomi/mt6768-common" name="mt6768-dev/proprietary_vendor_xiaomi_mt6768-common" remote="github" revision="lineage-20"/>
+  <project path="vendor/xiaomi" name="SuperiorOS-Devices/vendor_xiaomi_mt6768-common" remote="github" revision="thirteen"/>
   <project path="hardware/mediatek" name="mt6768-dev/android_hardware_mediatek" remote="github" revision="lineage-20"/>
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/>
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1"/>
-  <project path="packages/app/ImsService" name="mt6768-dev/ImsService" remote="github" revision="lineage-20"/>
   <project path="packages/apps/MtkFMRadio" name="mt6768-dev/android_packages_apps_MtkFMRadio" remote="github" revision="lineage-20"/>
   <project path="device/mediatek/sepolicy_vndr" name="mt6768-dev/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-20"/>
 
