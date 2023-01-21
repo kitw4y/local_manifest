@@ -30,7 +30,7 @@
   <!-- Packages -->
   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev"/>
   <remove-project name="LineageOS/android_packages_modules_Bluetooth"/>
-  <project path="packages/modules/Bluetooth" name="BluetoothModule" remote="me" revision="lineage-20.0"
+  <project path="packages/modules/Bluetooth" name="BluetoothModule" remote="me" revision="lineage-20.0"/>
   
   <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="gitlab" revision="main" clone-depth="1"/>
