@@ -25,10 +25,14 @@
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="mt6768-dev"/>
 
   <!-- Hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6768-dev"/>
+  <project path="hardware/mediatek" name="nashc-dev/android_hardware_mediatek" remote="github" revision="lineage-20"/>
 
   <!-- Packages -->
   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev"/>
+  <remove-project name="vendor_evolution"/>
+  <project path="vendor/evolution" name="vendor_evolution" remote="me" revision="tiramisu-t"/>
+  <project path="packages/apps/Aperture" name="PixelExperience/packages_apps_Aperture" remote="github" revision="thirteen"/>
+  <project path="vendor/Remove_Packages" name="RemovePackages" remote="melab" revision="13"/>
   
   <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-azure" name="Panchajanya1999/azure-clang" remote="gitlab" revision="main" clone-depth="1"/>
