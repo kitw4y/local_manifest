@@ -11,8 +11,6 @@
            fetch="https://github.com/mt6768-dev"
            revision="lineage-20"/>
 
-  <remote  name="ImSurajxD"
-           fetch="https://gitlab.com/ImSurajxD"/>
 
   <!-- Device -->
   <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot" remote="me" revision="evox"/>
@@ -37,6 +35,6 @@
   <project path="hardware/lineage/compat" name="Lafactorial/android_hardware_lineage_compat" remote="github" revision="lineage-20.0"/>
   
   <!-- Clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
 
 </manifest>
