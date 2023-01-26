@@ -30,18 +30,7 @@
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="mt6768-dev" revision="lineage-20"/>
 
   <!-- Packages -->
-  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev" revision="lineage-20"/>
-  <remove-project name="android_hardware_lineage_compat"/>
-  <project path="hardware/lineage/compat" name="Lafactorial/android_hardware_lineage_compat" remote="github" revision="lineage-20.0"/>
-  <remove-project name="frameworks_base"/>
-  <project path="frameworks/base" name="frameworks_base" remote="me" revision="tiramisu"/>
-  <remove-project name="frameworks_native"/>
-  <project path="frameworks/native" name="frameworks_native" remote="me" revision="tiramisu"/>
-  <remove-project name="frameworks_opt_telephony"/>
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="me" revision="tiramisu"/>
-  <remove-project name="platform/hardware/google/pixel"/>
-  <project path="hardware/google/pixel" name="platform-hardware-google-pixel" remote="me" revision="android-13.0.0_r20"/>
-  
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev" revision="lineage-20"/>  
   
   <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
