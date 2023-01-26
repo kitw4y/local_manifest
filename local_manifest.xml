@@ -7,6 +7,8 @@
   <remote  name="melab"
            fetch="https://gitlab.com/kitw4y"/>
 
+  <remote name="track" fetch="https://github.com/CodeChas3r"/>
+
   <remote  name="mt6768-dev"
            fetch="https://github.com/mt6768-dev"
            revision="lineage-20"/>
@@ -31,6 +33,18 @@
 
   <!-- Packages -->
   <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="mt6768-dev" revision="lineage-20"/>
+  <remove-project name="hardware_qcom_wlan"/>
+  <remove-project name="android_hardware_lineage_compat"/>
+  <remove-project name="packages_apps_Settings"/>
+  <remove-project name="packages_apps_DerpSpace"/>
+  <project path="hardware/qcom-caf/wlan" name="CodeChas3r/hardware_qcom_wlan" remote="github" revision="13-caf" clone-depth="1"/>
+  <project path="hardware/lineage/compat" name="CodeChas3r/android_hardware_lineage_compat" remote="github" revision="lineage-20.0" clone-depth="1"/>
+  <project path="packages/apps/Settings" name="CodeChas3r/packages_apps_Settings" remote="github" revision="13"/>
+  <project path="packages/apps/DerpSpace" name="CodeChas3r/packages_apps_DerpSpace" remote="github" revision="13"/>
+  <remove-project name="platform/frameworks/opt/net/ims"/>
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="track" revision="thirteen" clone-depth="1"/>
+  <remove-project name="frameworks_opt_telephony" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="track" revision="thirteen" clone-depth="1"/>
     
   <!-- Clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="gitlab" revision="master"/>
