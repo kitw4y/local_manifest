@@ -40,7 +40,7 @@
   <remove-project name="frameworks_opt_telephony"/>
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="me" revision="tiramisu"/>
   <remove-project name="platform/hardware/google/pixel"/>
-  <project path="hardware/google/pixel" name="platform-hardware-google-pixel" remote="me" revision="master"/>
+  <project path="hardware/google/pixel" name="platform-hardware-google-pixel" remote="me" revision="android-13.0.0_r20"/>
   
   
   <!-- Clang -->
