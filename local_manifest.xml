@@ -12,6 +12,5 @@
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="Amritorock/clang-r450784d" remote="gitlab" revision="master" clone-depth="1"/>
   <project path="packages/app/ImsService" name="mt6768-dev/ImsService" remote="github" revision="lineage-20"/>
   <project path="packages/apps/MtkFMRadio" name="mt6768-dev/android_packages_apps_MtkFMRadio" remote="github" revision="lineage-20"/>
-  <project path="device/mediatek/sepolicy_vndr" name="mt6768-dev/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-20"/>
 
 </manifest>
