@@ -1,52 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
 
-<remote name="hub"
-        fetch="https://github.com" />
-<remote name="dev"
-        fetch="https://github.com/mt6768-dev" />
-<remote name="clang"  
-        fetch="https://gitlab.com/LeCmnGend"/>
-<remote name="dead"
-         fetch="https://github.com/acex88" />
-<remote name="lineage"
-         fetch="https://github.com/LineageOS" />
- <remote name="lab"
-          fetch="https://gitlab.com" />  
-    
-  <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="kitw4y/android_device_xiaomi_lancelot.git" remote="hub" revision="cipher" clone-depth="1" />
-   
-  <!-- Common Device Tree -->
-  <project path="device/xiaomi/mt6768-common" name="crdroidandroid/android_device_xiaomi_mt6768-common.git" remote="hub" revision="13.0-test" clone-depth="1" />
+  <remote name="ImSurajxD"
+          fetch="https://gitlab.com/ImSurajxD"/>
+ 
+  <remote name="me"
+          fetch="https://github.com/kitw4y"/>
+ 
+  <remote name="mt"
+          fetch="https://github.com/mt6768-dev"/>
   
-  <!-- Kernel Trees-->
-  <project path="kernel/xiaomi/mt6768" name="raizeldumps/Kernel-Mi8745.git" remote="hub" revision="raizel" clone-depth="1" />
-
-  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi" name="ProjectElixir-Devices/vendor_xiaomi_mt6768.git" remote="hub" revision="13.0" clone-depth="1" />
-  
-  <!-- Hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek-1.git" remote="dead" revision="main" clone-depth="1" />
+  <remote name="lang"
+          fetch="https://github.com/galang8664"/>
         
-  <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/proton-clang" name="proton-clang.git" remote="clang" revision="clang-16" clone-depth="1" />
-  
-  <!-- Sepolicy -->
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="dev" revision="lineage-20" clone-depth="1" />
+  <remote name="los"
+          fetch="https://github.com/LineageOS"/>
 
-  <!-- Viper --> 
-  <project path="packages/apps/ViPER4AndroidFX" name="ViPER4AndroidFX.git" remote="dead" revision="13.0" clone-depth="1" />
+<!-- Remove some modules -->
+  <!--remove-project name="packages_modules_Bluetooth" /-->
+  <!--remove-project name="vendor_qcom_opensource_commonsys-intf_display"/-->
 
+ <!-- Device Trees -->
+  <project path="device/xiaomi/lancelot" name="android_device_xiaomi_lancelot" remote="me" revision="cipher14"/>
 
-  <!-- Remove -->
-  <remove-project name="crdroidandroid/android_frameworks_av" />
-  <remove-project name="crdroidandroid/android_frameworks_native" />
+ <!-- Common Trees -->
+  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="me" revision="lineage-20"/>
 
-<project path="frameworks/av" name="crdroid_frameworks_av.git" remote="dead" revision="13.0" clone-depth="1" />
+ <!-- Kernel -->
+  <project path="kernel/xiaomi/mt6768" name="android_kernel_xiaomi_mt6768" remote="los" revision="lineage-20"/>
 
-<project path="frameworks/native" name="crdroid_frameworks_native" remote="dead" revision="13.0" clone-depth="1" />
+ <!-- Vendor Trees -->
+  <project path="vendor/xiaomi/lancelot" name="proprietary_vendor_xiaomi_lancelot" remote="mt" revision="lineage-20"/>
+  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="mt" revision="lineage-20"/>
 
+ <!-- Extra -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-20"/>
+  <project path="packages/apps/MtkFMRadio" name="android_packages_apps_MtkFMRadio" remote="me" revision="lineage-20"/>
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master"/>
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-20"/>
 
-  </manifest>
+ <!-- Patch -->
+  <!--project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="Bt" revision="13.0"/-->
+  <!--project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="los" revision="lineage-20.0"/-->
+
+</manifest>
