@@ -5,12 +5,8 @@
 <remote name="los" fetch="https://github.com/LineageOS"/>
 <remote name="me" fetch="https://github.com/kitw4y"/>
 <remote name="clang" fetch="https://github.com/ImSurajxD"/>
-  <remote  name="androidproject"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-14.0.0_r27" />
-<!-- Removals -->
-  <remove-project name="prebuilts/clang/host/linux-x86"/>
+
+  
 <!-- Device Trees -->
   <project path="device/xiaomi/lancelot" name="DeviceTree.git" remote="me" revision="RisingOS-14" clone-depth="1"/>
   <project path="device/xiaomi/mt6768-common" name="CommonDeviceTree.git" remote="R9" revision="13" clone-depth="1"/>
@@ -18,6 +14,4 @@
   <project path="vendor/xiaomi" name="VendorTree.git" remote="R9" revision="13" clone-depth="1"/>
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-20" clone-depth="1"/>
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-20" clone-depth="1"/>
-  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" remote="androidproject" revision="15a3633cd36bb220e5b1b64ca3cebc8c45f45045" clone-depth="1"/>
-  <remove-project name="RisingTechOSS/android"/>
 </manifest>
