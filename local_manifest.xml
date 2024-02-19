@@ -13,3 +13,4 @@
   <project path="device/mediatek/sepolicy_vndr" name="orkunergun/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-21" clone-depth="1"/>
   <project path="hardware/mediatek" name="orkunergun/android_hardware_mediatek" remote="github" revision="lineage-21" clone-depth="1"/>
   <project path="hardware/xiaomi" name="orkunergun/android_hardware_xiaomi" remote="github" revision="lineage-21" clone-depth="1"/>
+</manifest>
