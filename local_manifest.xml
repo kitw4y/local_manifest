@@ -2,14 +2,15 @@
 <manifest>
   
 <remote name="R9" fetch="https://gitlab.com/MT6768Lab"/>
-<remote name="los" fetch="https://github.com/LineageOS"/>
 <remote name="me" fetch="https://github.com/kitw4y"/>
 
 <!-- Device Trees -->
-  <project path="device/xiaomi/lancelot" name="DeviceTree.git" remote="me" revision="RisingOS-14" clone-depth="1"/>
-  <project path="device/xiaomi/mt6768-common" name="CommonDeviceTree.git" remote="R9" revision="13" clone-depth="1"/>
+  <project path="device/xiaomi/lancelot" name="DeviceTree.git" remote="me" revision="rice" clone-depth="1"/>
+  <project path="device/xiaomi/mt6768-common" name="CommonDeviceTree.git" remote="R9" revision="14" clone-depth="1"/>
   <project path="kernel/xiaomi/mt6768" name="KernelTree.git" remote="R9" revision="13" clone-depth="1"/>
-  <project path="vendor/xiaomi" name="VendorTree.git" remote="R9" revision="13" clone-depth="1"/>
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-20" clone-depth="1"/>
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-20" clone-depth="1"/>
+  <project path="vendor/xiaomi/mt6768-common" name="CommonVendorTree.git" remote="R9" revision="14" clone-depth="1"/>
+  <project path="vendor/xiaomi/lancelot" name="VendorTree.git" remote="R9" revision="14" clone-depth="1"/>
+  <project path="device/mediatek/sepolicy_vndr" name="orkunergun/android_device_mediatek_sepolicy_vndr" remote="github" revision="lineage-21" clone-depth="1"/>
+  <project path="hardware/mediatek" name="orkunergun/android_hardware_mediatek" remote="github" revision="lineage-21" clone-depth="1"/>
+  <project path="hardware/xiaomi" name="orkunergun/android_hardware_xiaomi" remote="github" revision="lineage-21" clone-depth="1"/>
 </manifest>
